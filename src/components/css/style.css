@@ -1,0 +1,28 @@
+.box {
+    background-color: rgb(106, 161, 161);
+    width: 500px;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.inputField {
+    margin-top: 50px;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    outline: none;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.location {
+    margin-top: 200px;
+    font-size: 30px;
+    font-weight: 700;
+
+}   
