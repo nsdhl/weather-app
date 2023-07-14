@@ -7,7 +7,7 @@ const Tempapp = () => {
 
   useEffect(() => {
     const fetchApi = async () => {
-      const url = `http://api.openweathermap.org/data/2.5/weather?q=${search}&appid=9353169fadb314c9e78c3c8df648fb96`;
+      const url = `http://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=9353169fadb314c9e78c3c8df648fb96`;
       const response = await fetch(url);
       const resJson = await response.json();
       console.log(resJson);
@@ -40,6 +40,14 @@ const Tempapp = () => {
 
               {city.main ? (
                 <h1 className="temp">{city.main.temp}</h1>
+              ) : (
+                <p>No Temperature Data</p>
+              )}
+
+              {city.main ? (
+                <h3 className="tempmin_max">
+                  Min: {city.main.temp_min}°C | Max: {city.main.temp_max}°C
+                </h3>
               ) : (
                 <p>No Temperature Data</p>
               )}
